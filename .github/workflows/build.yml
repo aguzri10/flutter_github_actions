@@ -6,8 +6,8 @@ on:
       logLevel:
         description: 'Log Level'
         required: true
-      tags:
-        description: 'Tags'
+      description:
+        description: 'Description'
         required: true
 
 jobs:
