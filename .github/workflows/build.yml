@@ -2,6 +2,13 @@ name: Manual Action Workflow
 
 on: 
   workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log Level'
+        required: true
+      tags:
+        description: 'Description'
+        required: true
 
 jobs:
   build: 
