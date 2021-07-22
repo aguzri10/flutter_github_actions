@@ -9,6 +9,7 @@ on:
       flutterVersion:
         description: 'Input Flutter version, please input 2.2.3'
         required: true
+        default: '2.2.3'
 
 jobs:
   build: 
