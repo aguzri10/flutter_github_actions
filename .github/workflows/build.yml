@@ -6,6 +6,9 @@ on:
       logLevel:
         description: 'Log Level (warning, urgent, testing or others)'
         required: true
+      flutterVersion:
+        description: 'Input Flutter version, please input 2.2.3'
+        required: true
 
 jobs:
   build: 
@@ -18,7 +21,7 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: '2.2.3'
+          flutter-version: '${{ github.event.inputs.flutterVersion }}'
       - run: flutter pub get
       - run: flutter build apk
       - run: |
